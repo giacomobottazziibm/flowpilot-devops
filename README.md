@@ -1,11 +1,11 @@
 # System Requirements
 
-Ubuntu 24
-Postgres 17
-Nginx 1.24
-Python 3.12.3
-Npm 9.2
-Node 21
+- Ubuntu 24
+- Postgres 17
+- Nginx 1.24
+- Python 3.12.3
+- Npm 9.2
+- Node 21
 
 # Dependencies
 
@@ -153,13 +153,13 @@ INSERT INTO public."ApiKey" (apikey,"usage","userId",priority,concurrency) VALUE
 -------- 
 
 ### Links
-https://github.ibm.com/nl2insights/text2sql
-https://github.ibm.com/flowpilot/ui
-https://github.ibm.com/flowpilot/db-service
-https://github.ibm.com/flowpilot/evaluator-service
-https://github.ibm.com/nl2insights/api
+- https://github.ibm.com/nl2insights/text2sql
+- https://github.ibm.com/flowpilot/ui
+- https://github.ibm.com/flowpilot/db-service
+- https://github.ibm.com/flowpilot/evaluator-service
+- https://github.ibm.com/nl2insights/api
 
-https://flowpilot.res.ibm.com/docs
+- https://flowpilot.res.ibm.com/docs
 
 
 
