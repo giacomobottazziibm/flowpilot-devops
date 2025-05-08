@@ -2,6 +2,8 @@
 
 - Ubuntu 24
 - Postgres 17
+- Redis
+- Elastic Search 8
 - Nginx 1.24
 - Python 3.12.3
 - Npm 9.2
@@ -52,6 +54,7 @@ vi /etc/elasticsearch/elasticsearch.yml
 action.auto_create_index: +*
 ```
 
+Create the index
 
 `curl -XPUT 'http://localhost:9200/nl2insights'`
 
