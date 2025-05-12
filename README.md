@@ -168,3 +168,10 @@ INSERT INTO public."ApiKey" (apikey,"usage","userId",priority,concurrency) VALUE
 
 
 
+# Build Pipeline
+
+
+
+podman build -t flowpilot-build-base --file ./Dockerfile.build .
+
+
