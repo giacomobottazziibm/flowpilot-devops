@@ -21,6 +21,7 @@ test -f "/etc/$CONFIG" && source "/etc/$CONFIG"
 
 echo "Using Redis: $DB_PROXY_REDIS_URI"
 
+export NEXT_TELEMETRY_DISABLED=1
 
 usage()
 {

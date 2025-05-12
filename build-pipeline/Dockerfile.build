@@ -1,0 +1,24 @@
+# IBM Confidential
+# OCO Source Materials
+# 5900-AEO
+# Copyright IBM Corp. 2025
+# The source code for this program is not published or otherwise
+# divested of its trade secrets,
+# irrespective of what has been deposited with the U.S Copyright Office.
+FROM registry.access.redhat.com/ubi8/ubi-minimal:latest
+
+RUN curl -sL https://rpm.nodesource.com/setup_21.x | bash -
+
+
+RUN microdnf install nodejs git python3.12 python3.12-pip python3.12-devel   && \
+    python3 -m pip install --user pipx && \
+    python3 -m pipx ensurepath && \
+    ./root/.local/bin/pipx install poetry && \
+    python3 -m pip install setuptools wheel tomlkit setuptools_scm
+
+RUN ln -fs /usr/bin/python3.12 /usr/bin/python && \
+ln -fs /usr/bin/python3.12 /usr/bin/python3 
+
+ADD compile.sh /compile.sh
+RUN chmod a+x /compile.sh
+
